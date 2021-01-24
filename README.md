@@ -37,4 +37,5 @@ $ docker-compose down
 $ docker-compose up -d
 ```
 
-Acces to http://localhost/
+
+Your app should now be running on localhost:80.
