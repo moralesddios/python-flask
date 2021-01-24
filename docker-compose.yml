@@ -1,0 +1,24 @@
+version: '3.3'
+
+services:
+  app:
+    depends_on:
+      - db
+    build: .
+    ports:
+      - "80:80"
+    environment:
+      API_KEY: zz6ae7aainheq2ysz9$a8qjyedg65c50
+      DATABASE_URI: postgresql://postgres:secret@db/flask
+  db:
+    image: postgres:9.6
+    volumes:
+      - postgres-data:/var/lib/postgresql/data
+    ports:
+      - 5432:5432
+    environment:
+      - POSTGRES_PASSWORD=secret
+        POSTGRES_DB=flask
+volumes:
+  postgres-data:
+    external: false

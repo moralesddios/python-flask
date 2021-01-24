@@ -1,0 +1,12 @@
+Flask==1.1.2
+Flask-Cors==3.0.10
+flask-marshmallow==0.14.0
+Flask-SQLAlchemy==2.4.4
+marshmallow-sqlalchemy==0.24.1
+flask-restplus==0.13.0
+Werkzeug==0.16.1
+PyMySQL==1.0.2
+
+python-dotenv
+psycopg2
+wheel
