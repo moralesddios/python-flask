@@ -36,3 +36,5 @@ Restart app.
 $ docker-compose down
 $ docker-compose up -d
 ```
+
+Acces to http://localhost/
