@@ -15,18 +15,18 @@ List containers.
 $ docker ps
 ```
 
-Create database in postgresql.
+Test postgresql connection (password=secret).
 
 ```sh
 $ psql -h localhost -U postgres
-$ create database flask;
+$ \l;
 ```
 
 Create schema in database flask.
 
 ```sh
-$ docker exec -it flask_app_1 /bin/sh
-$ EXPORT FLASK_APP=main
+$ docker exec -it flask_app_1 bash
+$ export FLASK_APP=main
 $ flask createdb
 ```
 

@@ -1,7 +1,7 @@
 import os
 from flask import Flask, request
 from flask_cors import CORS
-from flask_restplus import Api
+from flask_restx import Api
 from flask_sqlalchemy import SQLAlchemy
 from flask_marshmallow import Marshmallow
 from functools import wraps
